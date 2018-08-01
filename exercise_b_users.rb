@@ -67,7 +67,7 @@ erik_lottery_numbers = users["Erik"][:lottery_numbers]
 p erik_lottery_numbers
 
 # 4. Get the type of Avril's pet Monty
-avril_pet_type = users["Avril"][:pets][0][:name]
+avril_pet_type = users["Avril"][:pets][0][:species]
 p avril_pet_type
 
 # 5. Get the smallest of Erik's lottery numbers
@@ -88,8 +88,8 @@ users["Erik"][:home_town] = "Edinburgh"
 p "Erik's hometown changed from #{temp} to #{users["Erik"][:home_town]}"
 
 # 9. Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pets].push({name: "Fluffy", species: "cat"})
-p users["Erik"][:pets]
+users["Erik"][:pets].push({name: "Fluffy", species: "dog"})
+p "Checking Erik's pets: #{users["Erik"][:pets]}"
 
 # 10. Add another person to the users hash
 users["Simon"] = {
@@ -103,4 +103,4 @@ users["Simon"] = {
   }
 ]
 }
-p users["Simon"]
+p "Added #{users["Simon"]}"

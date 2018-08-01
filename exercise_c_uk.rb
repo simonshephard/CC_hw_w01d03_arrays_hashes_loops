@@ -39,4 +39,5 @@ total = 0
 for country in united_kingdom
   total += country[:population]
 end
-p "The total population of the UK is #{total}"
+p total
+p "The total population of the UK is #{total.to_s.reverse.gsub(/(\d{3})/,"\\1,").chomp(",").reverse}"
